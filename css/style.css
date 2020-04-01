@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+*.row:not(#projects) {
+    padding: 50px;
+    
+}
+
+
+.navbar-brand {
+    font-family: 'Oxanium', cursive;
+}
+
+.jumbotron-fluid {
+    height: 500px;
+    width: 100%;
+    background: url('../media/mainImg.jpg')no-repeat fixed;
+    background-size: 100% 500px;
+    
+    
+}
+
+.jumbotron-fluid .container {
+    font-family: 'Oxanium', cursive;
+    font-weight: bold;
+    padding: 200px 0 0 0;
+}
+
+#about {
+    color: white;
+    /* height: auto; */
+    
+}
+
+
+#prof-image{
+    background: url('../media/me.jpg')no-repeat 50% 70%;
+    background-size: 250px 350px;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    
+}
+
+#projects {
+    padding-top: 50px;
+
+}
+
+.proj-thumb a .card {
+    height: 250px;
+}
+
+.overlay {
+    background-color: black;
+    height: inherit;
+}
+
+.card-img-top {
+    height: inherit;
+    opacity: 0.5;
+    transition: 1s opacity;
+}
+
+.card-img-top:hover {
+    opacity: 1;
+}
+
+hr {
+    background-color: white;
+}
+
+#ftr {
+    background-color: black;
+    font-family: 'Oxanium', cursive;    
+}
+
+.fa {
+    font-size: 40px;
+    color: white;
+    transition: opacity 1s;
+    
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+}  
