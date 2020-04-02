@@ -33,8 +33,6 @@ html, body {
 
 #about {
     color: white;
-    /* height: auto; */
-    
 }
 
 
@@ -54,15 +52,14 @@ html, body {
 
 .proj-thumb a .card {
     margin: auto;
-    width: 350px;
     height: 250px;
     background-color: black;
     border: none;
 }
 
 .card-img-top {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     opacity: 0.5;
     transition: 1s opacity;
 }
@@ -95,3 +92,16 @@ hr {
     color: white;
     opacity: 0.4;
 }  
+
+
+@media (max-width: 770px) {
+    .card-img-top {
+       opacity: 1;
+    }
+
+    .proj-thumb a .card {
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+        -moz-box-shadow: 0 10px 6px -6px #777;
+        box-shadow: 0 10px 6px -6px #777;
+    }
+}
