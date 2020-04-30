@@ -27,3 +27,15 @@ const scrollReveal = () => {
 }; 
 
 scrollReveal();
+
+
+//Nav bg
+window.addEventListener('scroll', () => {
+  const topOfPage = window.pageYOffset
+  const navbar = document.getElementById('navigation')
+  if(topOfPage >= 800) {
+    navbar.classList.add('bg-dark')
+  } else {
+    navbar.classList.remove('bg-dark')
+  }
+})

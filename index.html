@@ -13,7 +13,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navigation">
         <a class="navbar-brand" href="#">O.E. FEWD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="#">Home</a>
             <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#projects-label">Projects</a>
             <a class="nav-item nav-link" href="#contact">Contact</a>
           </div>
         </div>
@@ -30,9 +30,7 @@
         
       <!-- Jumbotron     -->
     <div class="jumbotron-fluid text-white text-center" id="home">
-      <div class="container">
-        <h1 id="jmb-slide-top">Orane Ellis Front End Web Developer</h1>
-      </div>
+      <h1 id="jmb-slide-top">Orane Ellis Front End Web Developer</h1>
     </div>  
 
 
@@ -40,17 +38,15 @@
 
       <!-- About  -->
       <!-- Row starts -->
-      <div class="row bg-dark" id="about">
+      <div class="row bg-dark text-white" id="about">
+      <!-- <div class="row text-black" id="about"> -->
         
         <div class="col-md-7 slide-left" id="abtInfo">
           <h1>About</h1>
-          <p>Hello I am Orane Ellis and I am a Front End web developer based in Atlanta, Georgia. I may not 
-            have a lot of experience but I make up for that with 10 times more hard work and dedication. I have
-            a vision for the future and will not stop even when it is fulfilled. I have a strong understanding
-            of the front-end components Html, CSS and JavaScript. I also have some experience with Node Js, Bootstrap, Jest
-            and Webpack. All my work is responsive and works well on all screens. Personality-wise I am 
-            a hardworking, reliable and friendly person. I could continue to go on about myself and skills
-            but I think it is best you see for yourself. So have a look at some of my projects.</p>
+            <p>Hello I am Orane Ellis and I am a front end web developer based in Atlanta, Georgia. I create webpages that are clean, responsive and easy to use.
+              My list of skills include HTML, CSS, Bootsrap, JavaScript, NodeJs and Webpack. I am always adding skills to my arsenal and you 
+              can be sure to expect high quality work from me.   
+            </p>
         </div>
 
         <div class="col-md-4 fade-in">
@@ -60,20 +56,19 @@
       </div>
       <!-- Row ends -->
 
-      <!-- Projects  -->
-      <section class="slide-right">
-        <!-- Row starts-->
-        <div class="row slide-top text-center" id="projects">
-          <div class="col">
-            <h1>Projects</h1>
-            <p>GitHub: <a href="https://github.com/ellisorane" target="blank">https://github.com/ellisorane</a></p>
-          </div>
+      <!-- Row starts-->
+      <!-- <div class="row slide-top text-center" > -->
+        <div class="text-center" id="projects-label">
+          <h1>Projects</h1>
+          <p><strong>GitHub:</strong> <a class="github"href="https://github.com/ellisorane" target="blank">https://github.com/ellisorane</a></p>
         </div>
-        <!-- Row ends -->  
+      <!-- </div> -->
+      <!-- Row ends -->  
 
+      <!-- Projects  -->
+      <section class="slide-right" id="projects">
         <!-- Row starts-->
         <div class="row">
-
           <div class="col-md-4 proj-thumb pb-4">
             <a href="https://wdc4u.netlify.com/" target="_blank" rel="noopener noreferrer">
               <div class="card">
@@ -108,8 +103,6 @@
                 <li>Node Js</li>
                 <li>Webpack</li>
                 <li>Bootstrap</li>
-                <li>REST APIs</li>
-                <li>Jest</li>
               </ul>
             </div>
           </div>
@@ -138,6 +131,7 @@
 
       <!-- Contact -->
       <!-- Row starts  -->
+      <!-- <div class="row bg-dark text-white" id="contact"> -->
       <div class="row bg-dark text-white" id="contact">
         <div class="col-md-6 cnt-fade-in">
           <h1>Contact Info</h1>
@@ -151,7 +145,6 @@
           <a class="text-white" href="mailto:ellisorane@yahoo.com">ellisorane@yahoo.com</a>
           <br>
           <a href="https://www.linkedin.com/in/orane-ellis-0bab1074/" class="fa fa-linkedin p-3" target="blank"></a>
-          <a href="https://www.instagram.com/rane_el/" class="fa fa-instagram p-3" target="blank"></a> 
           <br>
         </div>
         <div class="col-md-6 cnt-fade-in text-right"></div>
@@ -159,14 +152,6 @@
       </div>
       <!-- Row ends  -->
 
-      <!-- footer  -->
-      <!-- Row starts  -->
-      <div class="row" id="ftr">
-        <div class="col">
-            <p class="text-white text-right">Created by Orane Ellis</p>
-        </div>
-      </div>
-      <!-- Row ends  -->
 
     <!-- Container ends  -->
     </div>
