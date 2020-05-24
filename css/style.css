@@ -36,7 +36,7 @@ html, body {
 }
 
 #about {
-    height: 400px;
+    min-height: 400px;
 }
 
 #abtInfo {
@@ -123,13 +123,15 @@ hr {
 
 @media (max-width: 600px) {
     #projects-label {
-        width: 60%;
+        width: 70%;
+        padding: 30px 0;
+
     }
 }
 
 @media (max-width: 400px) {
     #projects-label {
-        width: 70%;
-        padding: 30px 0;
+        padding: 40px 20px;
+        word-wrap: break-word;
     }
 }
