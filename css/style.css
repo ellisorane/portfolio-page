@@ -35,28 +35,28 @@ html, body {
     font-size: 50px;
 }
 
-#prof-image{
-    background: url('../media/me.jpg')no-repeat 50% 70%;
-    background-size: 250px 350px;
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    
+#about {
+    height: 400px;
+}
+
+#abtInfo {
+    border: 1px solid white;
+    border-top: none;
+    border-bottom: none;
 }
 
 #projects {
-    padding-top: 200px;
+    padding-top: 150px;
+    min-height: 900px;
 }
 
 #projects-label {
+    font-weight: bold;
     background-color: white;
     border-radius: 15px;
     width: 40%;
-    padding: 40px 0;
-    left: 30%;
-    top: 1100px;
-    position: absolute;
-    z-index: 1;
+    padding: 40px 10px;
+    margin: auto;
     box-shadow: 0 50px 30px ;
 
 }
@@ -67,7 +67,7 @@ html, body {
 
 .proj-thumb a .card {
     margin: auto;
-    height: 250px;
+    height: 300px;
     background-color: black;
     border: none;
 }
@@ -86,6 +86,10 @@ html, body {
     box-shadow: 0 10px 6px -6px #777;
 }
 
+#contact {
+    background-color: #fed766;
+}
+
 hr {
     background-color: white;
 }
@@ -93,7 +97,7 @@ hr {
 .fa {
     font-size: 40px;
     color: white;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
     
 }
 
@@ -112,30 +116,20 @@ hr {
         -webkit-box-shadow: 0 10px 6px -6px #777;
         -moz-box-shadow: 0 10px 6px -6px #777;
         box-shadow: 0 10px 6px -6px #777;
+        height: 250px;
     }
 
-    #projects-label {
-        left: 20%;
-        top: 1280px;
-        width: 60%;
-    }
 }
 
 @media (max-width: 600px) {
     #projects-label {
-        left: 20%;
-        top: 1430px;
         width: 60%;
-        box-shadow: none;
     }
 }
 
 @media (max-width: 400px) {
     #projects-label {
-        top: 1540px;
-        left: 15%;
         width: 70%;
         padding: 30px 0;
-        box-shadow: none;
     }
 }
