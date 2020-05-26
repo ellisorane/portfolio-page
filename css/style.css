@@ -15,7 +15,7 @@ html, body {
     font-size: 20px;
 }
 
-.navbar-brand {
+.navbar-brand, h1 {
     font-family: 'Oxanium', cursive;
 }
 
@@ -46,8 +46,10 @@ html, body {
 }
 
 #projects {
-    padding-top: 150px;
     min-height: 900px;
+    /* background-color: lightblue; */
+    width: 100%;
+    padding: 0;
 }
 
 #projects-label {
@@ -84,6 +86,16 @@ html, body {
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
+}
+
+.component-heading {
+    text-decoration: underline;
+}
+
+.components {
+    font-family: 'Oxanium', cursive;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #contact {
@@ -123,7 +135,7 @@ hr {
 
 @media (max-width: 600px) {
     #projects-label {
-        width: 70%;
+        width: 75%;
         padding: 30px 0;
 
     }
