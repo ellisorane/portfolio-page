@@ -15,7 +15,7 @@ html, body {
     font-size: 20px;
 }
 
-.navbar-brand, h1 {
+.navbar-brand, h1, h3 {
     font-family: 'Oxanium', cursive;
 }
 
@@ -47,7 +47,6 @@ html, body {
 
 #projects {
     min-height: 900px;
-    /* background-color: lightblue; */
     width: 100%;
     padding: 0;
 }
@@ -59,12 +58,8 @@ html, body {
     width: 40%;
     padding: 40px 10px;
     margin: auto;
-    box-shadow: 0 50px 30px ;
+    box-shadow: 0 50px 30px;
 
-}
-
-.github {
-    color: gray;
 }
 
 .proj-thumb a .card {
@@ -96,6 +91,11 @@ html, body {
     font-family: 'Oxanium', cursive;
     font-weight: bold;
     font-size: 20px;
+}
+
+.source-code, .source-code:hover {
+    text-decoration: none;
+    color: black;
 }
 
 #contact {
