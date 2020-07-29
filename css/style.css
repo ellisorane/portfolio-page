@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .BG-black {
