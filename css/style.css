@@ -168,4 +168,8 @@ hr {
         padding: 40px 20px;
         word-wrap: break-word;
     }
+    
+    #projects-label h1 {
+        font-size: 30px;
+    }
 }
