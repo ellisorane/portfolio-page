@@ -5,90 +5,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="media/JP icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Joy Photography | Home</title>
+    <title>Orane Ellis front end web developer portfolio page</title>
 </head>
 <body>
 
-  <nav>
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navigation">
+        <a class="navbar-brand" href="#">ellisWebDev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#projects-label">Projects</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+    </nav> 
+        
+    <div class="jumbotron-fluid text-white text-center" id="home">
+      <div class="dark-overlay">
+        <h1 class="slide-from-top">Orane Ellis Front End Web Developer</h1>
+      </div>
+    </div>  
 
-    <div class="nav-brand">
-      <h2><a href="index.html">Joy Photography</a></h2>
-    </div>
-    <ul class="nav-ul">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pages/about.html">About</a></li>
-      <li><a href="pages/gallery.html">Gallery</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <div id="preview-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000" data-pause="false">
-    <ol class="carousel-indicators">
-      <li data-target="#preview-slider" data-slide-to="0" class="active"></li>
-      <li data-target="#preview-slider" data-slide-to="1"></li>
-      <li data-target="#preview-slider" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
+    <div class="container-fluid">
+
+      <div class="row text-white" id="about">
+        
+        <div class="col-md-7 slide-from-bottom mx-auto p-5 text-center" id="abtInfo">
+          <h1>About</h1>
+          <p>Hello I am Orane Ellis and I am a self taught front end web developer based in Atlanta, Georgia. I create webpages that are clean, responsive and easy to use.
+            My list of skills include HTML, CSS, Bootsrap, JavaScript and ReactJs. I am always adding skills to my arsenal and you 
+            can be sure to expect high quality work from me.   
+          </p>
+          <h3 class="mt-5">Resume</h3>
+          <p>Click the icon below to download a copy of my resume</p>
+          <a href="/media/Resume For Front End Web Developer.pdf" download>
+            <img src="media/resume icon.png" alt="Download resume" width="70" height="70" />
+          </a>
+        </div>
+
+      </div>
+
+      <section class="pt-5" id="projects">
+        <div class="row">
+          <div class="text-center pb-5 mb-5" id="projects-label">
+            <h1>Projects</h1>
+            <a class="github"href="https://github.com/ellisorane" target="blank"><img src="media/GitHub-Mark-64px.png" alt="Github"></a>
+          </div>
+        </div>
+
+        <div class="row slide-from-left bg-light">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://wdc4u.netlify.com/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/wdc4u.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Grid</li>
+                <li>Flex Box</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/wd4u-page" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row slide-from-right reverse-cols">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://mabletonmanor.netlify.com/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/mableton-manor.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/mableton-manor-redesign" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row slide-from-left bg-light">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://high5-workout-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/high5.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJs</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/high5-random-workout-app" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row slide-from-right reverse-cols">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://orane-travel-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/travel-app.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node Js</li>
+                <li>Webpack</li>
+                <li>Bootstrap</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/travelApp" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row slide-from-left bg-light">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://joy-photography.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/Joy Photography.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Grid</li>
+                <li>Flex Box</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/travelApp" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
       
-      <div class="carousel-item active">
-        <img class="slider-img" id="slide-landscape" src="media/img-1.JPG" alt="First slide">
-        <img class="slider-img" id="slide-portrait" src="media/img-8.JPG" alt="First slide">
-        <div class="carousel-caption">
-          <img src="media/Joy photography logo white.png" class="carousel-logo" alt="logo">
-          <h1 class="site-name-caption">JOY PHOTOGRAPHY</h1>
-          <p>Capture moments before they become memories.</p>
+
+      <div class="row text-white" id="contact">
+        <div class="col-md-6 cnt-fade-in">
+          <h1>Contact Info</h1>
+          <p>Thank you for taking the time to check out my page. If you like what you saw
+            or would like to hire me, please get in touch with me through your preferred means.  
+          </p>
+          <hr>
+          <p>Phone:</p>
+          <p>770-371-7066</p>
+          <p>Email: </p>
+          <a class="text-white" href="mailto:ellisorane@yahoo.com">ellisorane@yahoo.com</a>
+          <br>
+          <a href="https://www.linkedin.com/in/orane-ellis-0bab1074/" class="fa fa-linkedin p-3" target="blank"></a>
+
         </div>
+
+        <div class="col-md-6 pl-5 cnt-fade-in"></div>
+          
       </div>
 
-      <div class="carousel-item">
-        <img class="slider-img" id="slide-landscape" src="media/img-7.JPG" alt="Second slide">
-        <img class="slider-img" id="slide-portrait" src="media/img-2.JPG" alt="Second slide">
-        <div class="carousel-caption">
-          <img src="media/Joy photography logo white.png" class="carousel-logo" alt="logo">
-          <h2 class="pb-3">SEE MY WORK</h2>
-          <button class="btn btn-light"><a href="pages/gallery.html">SEE MORE</a></button>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img class="slider-img" id="slide-landscape" src="media/img-3.jpg" alt="Third slide">
-        <img class="slider-img" id="slide-portrait" src="media/img-5.jpg" alt="Third slide">
-        <div class="carousel-caption">
-          <img src="media/Joy photography logo white.png" class="carousel-logo" alt="logo">
-          <h2 class="pb-3">HAVE QUESTIONS?</h2>
-          <button class="btn btn-light"><a href="pages/contact.html">CONTACT ME</a></button>
-        </div>
-      </div>
 
     </div>
-    <a class="carousel-control-prev" href="#preview-slider" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#preview-slider" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-  <footer>
-    <a href="#" class="fa fa-instagram"></a>
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-linkedin"></a>
-
-  </footer>
-
-    <script src="js/index.js"></script>
+    
+    <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
