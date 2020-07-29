@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -28,15 +28,17 @@
     </nav> 
         
     <div class="jumbotron-fluid text-white text-center" id="home">
-      <h1 id="jmb-slide-top">Orane Ellis Front End Web Developer</h1>
+      <div class="dark-overlay">
+        <h1 class="slide-from-top">Orane Ellis Front End Web Developer</h1>
+      </div>
     </div>  
 
 
     <div class="container-fluid">
 
-      <div class="row bg-dark text-white" id="about">
+      <div class="row text-white" id="about">
         
-        <div class="col-md-7 slide-left mx-auto p-5 text-center" id="abtInfo">
+        <div class="col-md-7 slide-from-bottom mx-auto p-5 text-center" id="abtInfo">
           <h1>About</h1>
           <p>Hello I am Orane Ellis and I am a self taught front end web developer based in Atlanta, Georgia. I create webpages that are clean, responsive and easy to use.
             My list of skills include HTML, CSS, Bootsrap, JavaScript and ReactJs. I am always adding skills to my arsenal and you 
@@ -51,6 +53,12 @@
 
       </div>
 
+
+
+
+
+
+
       <section class="pt-5" id="projects">
         <div class="row">
           <div class="text-center pb-5 mb-5" id="projects-label">
@@ -58,14 +66,16 @@
             <a class="github"href="https://github.com/ellisorane" target="blank"><img src="media/GitHub-Mark-64px.png" alt="Github"></a>
           </div>
         </div>
-        
-        <div class="row">
+
+        <div class="row slide-from-left bg-light">
           <div class="col-md-6 proj-thumb pt-5">
             <a href="https://wdc4u.netlify.com/" target="_blank" rel="noopener noreferrer">
               <div class="card">
                   <img src="media/wdc4u.jpg" class="card-img-top" alt="Project thumbnail">
               </div>
             </a>
+          </div>
+          <div class="col-md-6 pt-5">
             <div class="components pt-3">
               <h5 class="component-heading">Components</h5>
               <ul>
@@ -74,18 +84,21 @@
                 <li>JavaScript</li>
                 <li>Grid</li>
                 <li>Flex Box</li>
-                
               </ul>
               <button><a class="source-code" href="https://github.com/ellisorane/wd4u-page" target="blank">Source Code</a></button>
             </div>
           </div>
+        </div>
 
+        <div class="row slide-from-right reverse-cols">
           <div class="col-md-6 proj-thumb pt-5">
             <a href="https://mabletonmanor.netlify.com/" target="_blank" rel="noopener noreferrer">
               <div class="card">
                   <img src="media/mableton-manor.jpg" class="card-img-top" alt="Project thumbnail">
               </div>
             </a>
+          </div>
+          <div class="col-md-6 pt-5">
             <div class="components pt-3">
               <h5 class="component-heading">Components</h5>
               <ul>
@@ -97,16 +110,17 @@
               <button><a class="source-code" href="https://github.com/ellisorane/mableton-manor-redesign" target="blank">Source Code</a></button>
             </div>
           </div>
-          
         </div>
 
-        <div class="row">
+        <div class="row slide-from-left bg-light">
           <div class="col-md-6 proj-thumb pt-5">
             <a href="https://high5-workout-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <div class="card">
                   <img src="media/high5.jpg" class="card-img-top" alt="Project thumbnail">
               </div>
             </a>
+          </div>
+          <div class="col-md-6 pt-5">
             <div class="components pt-3">
               <h5 class="component-heading">Components</h5>
               <ul>
@@ -118,13 +132,17 @@
               <button><a class="source-code" href="https://github.com/ellisorane/high5-random-workout-app" target="blank">Source Code</a></button>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-6 proj-thumb pt-5 pb-4">
+        <div class="row slide-from-right reverse-cols">
+          <div class="col-md-6 proj-thumb pt-5">
             <a href="https://orane-travel-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <div class="card">
                   <img src="media/travel-app.jpg" class="card-img-top" alt="Project thumbnail">
               </div>
             </a>
+          </div>
+          <div class="col-md-6 pt-5">
             <div class="components pt-3">
               <h5 class="component-heading">Components</h5>
               <ul>
@@ -138,12 +156,36 @@
               <button><a class="source-code" href="https://github.com/ellisorane/travelApp" target="blank">Source Code</a></button>
             </div>
           </div>
-          
         </div>
+
+        <div class="row slide-from-left bg-light">
+          <div class="col-md-6 proj-thumb pt-5">
+            <a href="https://joy-photography.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <div class="card">
+                  <img src="media/Joy Photography.jpg" class="card-img-top" alt="Project thumbnail">
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 pt-5">
+            <div class="components pt-3">
+              <h5 class="component-heading">Components</h5>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Grid</li>
+                <li>Flex Box</li>
+              </ul>
+              <button><a class="source-code" href="https://github.com/ellisorane/travelApp" target="blank">Source Code</a></button>
+            </div>
+          </div>
+        </div>
+        
+
       </section>
       
 
-      <div class="row bg-dark text-white" id="contact">
+      <div class="row text-white" id="contact">
         <div class="col-md-6 cnt-fade-in">
           <h1>Contact Info</h1>
           <p>Thank you for taking the time to check out my page. If you like what you saw
@@ -167,9 +209,8 @@
     </div>
     
     <script src="js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>

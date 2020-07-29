@@ -3,12 +3,14 @@ html, body {
     width: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    
+}
+
+.BG-black {
+    background-color: black;
 }
 
 *.row:not(#projects) {
     padding: 50px;
-    
 }
 
 .navbar {
@@ -24,9 +26,16 @@ html, body {
     width: 100%;
     background: url('../media/mainImg.jpg')no-repeat fixed;
     background-size: 100% 800px;
+    
+}
+
+.dark-overlay {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .jumbotron-fluid h1 {
@@ -37,6 +46,8 @@ html, body {
 
 #about {
     min-height: 400px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 31%, rgba(18,18,18,1) 43%, rgba(39,39,39,1) 58%, rgba(60,60,60,1) 67%, rgba(255,255,255,1) 100%);
 }
 
 #abtInfo {
@@ -59,12 +70,16 @@ html, body {
     padding: 40px 10px;
     margin: auto;
     box-shadow: 0 50px 30px;
+}
 
+.reverse-cols {
+    flex-direction: row-reverse;
 }
 
 .proj-thumb a .card {
     margin: auto;
-    height: 400px;
+    height: auto;
+    width: 100%;
     background-color: black;
     border: none;
 }
@@ -88,6 +103,12 @@ html, body {
 }
 
 .components {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Oxanium', cursive;
     font-weight: bold;
     font-size: 20px;
@@ -99,7 +120,7 @@ html, body {
 }
 
 #contact {
-    background-color: #fed766;
+    background-color: black;
 }
 
 hr {
@@ -119,7 +140,7 @@ hr {
     opacity: 0.4;
 }  
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
     .card-img-top {
        opacity: 1;
     }
@@ -128,7 +149,7 @@ hr {
         -webkit-box-shadow: 0 10px 6px -6px #777;
         -moz-box-shadow: 0 10px 6px -6px #777;
         box-shadow: 0 10px 6px -6px #777;
-        height: 250px;
+        height: 200px;
     }
 
 }

@@ -1,29 +1,34 @@
 const scrollReveal = () => {
   window.sr = ScrollReveal();
 
-  //Nav
   sr.reveal('nav', {
     duration: 2000,
   })
 
-  //Jumbotron
-  sr.reveal('#jmb-slide-top', {
+  sr.reveal('.slide-from-top', {
     duration: 2000,
     origin: 'top',
     distance: '200px'
   })
 
-  //About
-  sr.reveal('.slide-left', {
+  sr.reveal('.slide-from-bottom', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '200px',
+    // delay: 1000
+  })
+
+  sr.reveal('.slide-from-left', {
     duration: 2000,
     origin: 'left',
     distance: '300px'
   })
-  //Img
-  sr.reveal('.fade-in', {
-    duration: 2000,
-  })
 
+  sr.reveal('.slide-from-right', {
+    duration: 2000,
+    origin: 'right',
+    distance: '300px'
+  })
 }; 
 
 scrollReveal();
@@ -34,8 +39,8 @@ window.addEventListener('scroll', () => {
   const topOfPage = window.pageYOffset
   const navbar = document.getElementById('navigation')
   if(topOfPage >= 800) {
-    navbar.classList.add('bg-dark')
+    navbar.classList.add('BG-black')
   } else {
-    navbar.classList.remove('bg-dark')
+    navbar.classList.remove('BG-black')
   }
 })
