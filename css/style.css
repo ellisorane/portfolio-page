@@ -141,6 +141,12 @@ hr {
     opacity: 0.4;
 }  
 
+.heroku-note {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(226, 91, 6);
+}
+
 @media (max-width: 769px) {
     .jumbotron-fluid {
         background-color: rgba(0, 0, 0, 0.9);
